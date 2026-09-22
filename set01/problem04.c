@@ -11,13 +11,13 @@ float input()
 
 float squareroot(float s)
 {
-  float guess = s/2;
-  float next_guess =  (guess + s/guess)/2;
+  float guess=s/2;
+  float next_guess=(guess+s/guess)/2;
  
-  while( fabs(guess - next_guess) > 0.00001 )
+  while(fabs(guess-next_guess) > 0.00001 )
   {
-    guess = next_guess;
-    next_guess = (guess + s/guess)/2;
+    guess=next_guess;
+    next_guess=(guess + s/guess)/2;
   }
   return guess;
 }
@@ -29,8 +29,8 @@ void output(float s, float root)
 
 int main()
 {
-  float s,root;
+  float s,sr;
   s=input();
-  root = squareroot(s);
+  sr=squareroot(s);
   output(s,root);
 }
