@@ -42,4 +42,5 @@ int main()
     input_num(n,a);
     sum=sum_of_num(n,a);
     output(n,a,sum);
+    return 0;
 }
